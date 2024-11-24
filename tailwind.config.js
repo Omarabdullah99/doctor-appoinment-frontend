@@ -9,6 +9,9 @@ export default {
       colors: { // এখানে colors ব্যবহার করতে হবে
         primary: '#5F6FFF', // bg-primary না লিখে শুধু primary নাম দিতে হবে
       },
+      gridTemplateColumns:{
+        'auto':'repeat(auto-fill, minmax(200px, 1fr))'
+      }
     },
   },
   plugins: [],
