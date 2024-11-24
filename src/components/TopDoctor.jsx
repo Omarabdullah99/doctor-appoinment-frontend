@@ -1,7 +1,9 @@
-import React from "react";
-import { doctors } from "../assets/assets_frontend/assets";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+import { AppContext } from "../context/AppContext";
 
 const TopDoctor = () => {
+  const { doctors}=useContext(AppContext)
   const topdoctor = doctors.slice(0, 10);
   return (
     <div className="mb-[80px]">
@@ -13,7 +15,7 @@ const TopDoctor = () => {
       </p>
       <div className="topdoctorlist grid grid-cols-auto gap-3 mb-[30px]">
         {topdoctor.map((doctor, _id) => (
-          <div key={_id} className="border rounded border-[#C9D8FF] hover:translate-y-[-10px] transition-all duration-500">
+          <Link to={`/appoinment/${doctor._id}`} key={_id} className="border rounded border-[#C9D8FF] hover:translate-y-[-10px] transition-all duration-500">
             <div className="img bg-[#EAEFFF]">
               <img src={doctor.image} alt="" />
             </div>
@@ -25,10 +27,10 @@ const TopDoctor = () => {
               <p className="text-xl font-bold my-1">{doctor.name}</p>
               <p className="text-[15px]">{doctor.speciality}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
-      <div className="flex justify-center"><button className="bg-[#EAEFFF] w-[214px] h-[60px] rounded-full text-xl text-[#4B5563]">more</button></div>
+      <Link to='/doctors' className="flex justify-center"><button className="bg-[#EAEFFF] w-[214px] h-[60px] rounded-full text-xl text-[#4B5563]">more</button></Link>
     </div>
   );
 };
