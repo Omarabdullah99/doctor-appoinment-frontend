@@ -1,8 +1,9 @@
 import React from 'react'
-import Banner from '../components/Banner'
-import SpecialityMenu from '../components/SpecialityMenu'
-import TopDoctor from '../components/TopDoctor'
-import BottomBanner from '../components/BottomBanner'
+import Banner from '../components/Home/Banner'
+import SpecialityMenu from '../components/Home/SpecialityMenu'
+import TopDoctor from '../components/Home/TopDoctor'
+import BottomBanner from '../components/Home/BottomBanner'
+
 
 const Home = () => {
   return (

@@ -10,7 +10,8 @@ export default {
         primary: '#5F6FFF', // bg-primary না লিখে শুধু primary নাম দিতে হবে
       },
       gridTemplateColumns:{
-        'auto':'repeat(auto-fill, minmax(200px, 1fr))'
+        'auto':'repeat(auto-fill, minmax(200px, 1fr))',
+        'footer': '2fr 1fr 1fr',
       }
     },
   },

@@ -9,6 +9,7 @@ import MyAppoinment from "./pages/MyAppoinment";
 import Appoinment from "./pages/Appoinment";
 import Login from "./pages/Login";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 const App = () => {
   return (
     <div className="w-[80%] m-auto">
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/appoinment/:docId" element={<Appoinment />}/>
         <Route path="/login" element={<Login />}/>
       </Routes>
+      <Footer />
     </div>
   );
 };
