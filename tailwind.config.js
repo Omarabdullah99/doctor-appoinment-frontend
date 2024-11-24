@@ -12,6 +12,7 @@ export default {
       gridTemplateColumns:{
         'auto':'repeat(auto-fill, minmax(200px, 1fr))',
         'footer': '2fr 1fr 1fr',
+        'auto2': '1fr 1fr 1fr 1fr 1fr'
       }
     },
   },
