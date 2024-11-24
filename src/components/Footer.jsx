@@ -41,7 +41,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <p className="p-5 text-center border-t-2 border-t-[#BDBDBD]-300">Copyright © 2024 GreatStack - All Right Reserved.</p>
+      <p className="p-5 text-center border-t-2 border-t-[#BDBDBD]-300">Copyright ©OmarAbdullah - All Right Reserved.</p>
     </div>
   );
 };
