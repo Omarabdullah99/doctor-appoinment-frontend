@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { AppContext } from "../context/AppContext";
 import { useParams } from "react-router-dom";
 import { assets } from "../assets/assets_frontend/assets";
+import RelatedDoctor from "../components/Appoinment/RelatedDoctor";
 
 const Appointment = () => {
   const [doctor, setDoctor] = useState(null);
@@ -82,7 +83,8 @@ const Appointment = () => {
     return <div>Loading...</div>;
   }
 
-  console.log("out", docSlots);
+  // console.log("out", docSlots);
+  console.log('doctor',doctor)
 
   return (
     <div className="details min-h-screen mb-[40px]">
@@ -128,7 +130,7 @@ const Appointment = () => {
       </div>
 
       
-      <div className="sm:ml-72 sm:pl-4 mt-4 font-medium text-gray-700">
+      <div className="sm:ml-72 sm:pl-4 mt-4 font-medium text-gray-700 mb-[80px]">
         <p>Booking slots</p>
         {/* ----- Booking slots date ----- */}
         <div className="flex gap-3 items-center  mt-4">
@@ -166,12 +168,8 @@ const Appointment = () => {
           </div>
           <button className="bg-primary text-white text-sm font-light px-14 py-3 rounded-full my-6">Book an appointment</button>
       </div>
-      
-     
 
-          
-
-      <div className="relative"></div>
+      <RelatedDoctor docId={docId} speciality={doctor?.speciality}/>
     </div>
   );
 };
