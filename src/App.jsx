@@ -10,6 +10,7 @@ import Appoinment from "./pages/Appoinment";
 import Login from "./pages/Login";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Register from "./pages/Register";
 const App = () => {
   return (
     <div className="w-[80%] m-auto">
@@ -26,6 +27,7 @@ const App = () => {
         {/* Like doctor details */}
         <Route path="/appoinment/:docId" element={<Appoinment />}/>
         <Route path="/login" element={<Login />}/>
+        <Route path="/register" element={<Register />}/>
       </Routes>
       <Footer />
     </div>
