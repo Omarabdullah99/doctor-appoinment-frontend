@@ -129,7 +129,7 @@ const MyProfile = () => {
 
       <div>
         {isEdit ? (
-          <button className="border border-primary px-8 py-2 rounded-full mt-11" onClick={() => setIsEdit(false)}>Save Information</button>
+          <button className="border border-primary px-8 py-2 rounded-full mt-11 mb-10" onClick={() => setIsEdit(false)}>Save Information</button>
         ) : (
           <button className="border border-primary px-8 py-2 rounded-full mt-11" onClick={() => setIsEdit(true)}>Edit</button>
         )}
